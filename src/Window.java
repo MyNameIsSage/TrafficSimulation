@@ -1,7 +1,4 @@
 import java.awt.Graphics;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 public class Window extends JPanel implements Runnable
 {
@@ -28,7 +25,7 @@ public class Window extends JPanel implements Runnable
         int height = getHeight();
         wIncr= width/12;
         hIncr= height/12;
-        g.drawImage(grid.map,0,0,this);
+        g.drawImage(Grid.map,0,0,this);
         for (int i =0; i< cars.length;i++)
         {
             if(cars[i].onRoad())
